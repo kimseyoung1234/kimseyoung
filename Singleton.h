@@ -3,21 +3,23 @@
 #include "cocos2d.h"
 #include "Picture.h"
 
+// Picture와 HelloWorld 클래스 양쪽에서 전역변수 처럼 사용하기 위해 싱글톤 객체 생성
 class DataSingleTon {
 private:
-	static DataSingleTon *m_pInstance;  //프로그램 시작시에 이놈 하나만 메모리 잡고 이것만 씀.  
+	static DataSingleTon *m_pInstance; 
 	int m_nData;
 	//cocos2d::Sprite* emptyImage;
 	cocos2d::Vector <Picture*> picture;
+	cocos2d::Vector <cocos2d::Sprite*> emptyImage;
 private:
-	DataSingleTon(); //생성자 그냥 사용못해요.
+	DataSingleTon();
 public:
 	void setData(int nData);
 	void setPicutre(Picture *p);
 	cocos2d::Vector<Picture*> getPicutre();
-//	void setEmptyImage(cocos2d::Sprite *s);
-//	cocos2d::Sprite * getEmptyImage();
-	static DataSingleTon *getInstance(); //m_instance의 주소값을 얻어와서 사용. 
+	void setEmptyImage(cocos2d::Sprite *s);
+	cocos2d::Vector<cocos2d::Sprite*> getEmptyImage();
+	static DataSingleTon *getInstance(); 
 
 };
 

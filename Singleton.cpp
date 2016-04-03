@@ -14,7 +14,7 @@ void DataSingleTon::setData(int nData)
 DataSingleTon * DataSingleTon::getInstance()
 {
 
-	if (!m_pInstance)  //getInstace를 호출하는 순간 메모리를 잡는 방법으로 해도 되고
+	if (!m_pInstance)  
 	{
 		m_pInstance = new DataSingleTon;
 	}
@@ -33,11 +33,12 @@ cocos2d::Vector<Picture*> DataSingleTon::getPicutre()
 	return picture;
 }
 
-/*void setEmptyImage(cocos2d::Sprite *s)
+void DataSingleTon::setEmptyImage(cocos2d::Sprite *p)
 {
-	emptyImage = s;
+	emptyImage.pushBack(p);
 }
-cocos2d::Sprite * getEmptyImage()
+
+cocos2d::Vector<Sprite*> DataSingleTon::getEmptyImage()
 {
 	return emptyImage;
-}*/
+}
