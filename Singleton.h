@@ -7,12 +7,13 @@ class DataSingleTon {
 private:
 	static DataSingleTon *m_pInstance;  //프로그램 시작시에 이놈 하나만 메모리 잡고 이것만 씀.  
 	int m_nData;
-	cocos2d::Vector <cocos2d::Sprite*> picture;
+	cocos2d::Vector <Picture*> picture;
 private:
 	DataSingleTon(); //생성자 그냥 사용못해요.
 public:
 	void setData(int nData);
-	void printData();
+	void setPicutre(Picture *p);
+	cocos2d::Vector<Picture*> getPicutre();
 	static DataSingleTon *getInstance(); //m_instance의 주소값을 얻어와서 사용. 
 
 };

@@ -43,6 +43,7 @@ void HelloWorld::addPicture()
 	sprite1->setTextureRect(Rect(0, 0, 170, 170));
 	sprite1->setScale(0.5f);
 	this->addChild(sprite1);
+	DataSingleTon::getInstance()->setPicutre(sprite1);
 
 	sprite2 = new Picture();
 	sprite2->setTexture("images/sprite.png");
@@ -51,6 +52,7 @@ void HelloWorld::addPicture()
 	sprite2->setTextureRect(Rect(170, 0, 170, 170));
 	sprite2->setScale(0.5f);
 	this->addChild(sprite2);
+	DataSingleTon::getInstance()->setPicutre(sprite2);
 
 	sprite3 = new Picture();
 	sprite3->setTexture("images/sprite.png");
@@ -59,6 +61,8 @@ void HelloWorld::addPicture()
 	sprite3->setTextureRect(Rect(340, 0, 170, 170));
 	sprite3->setScale(0.5f);
 	this->addChild(sprite3);
+	DataSingleTon::getInstance()->setPicutre(sprite3);
+
 
 	sprite4 = new Picture();
 	sprite4->setTexture("images/sprite.png");
@@ -67,6 +71,8 @@ void HelloWorld::addPicture()
 	sprite4->setTextureRect(Rect(0, 170, 170, 170));
 	sprite4->setScale(0.5f);
 	this->addChild(sprite4);
+	DataSingleTon::getInstance()->setPicutre(sprite4);
+
 
 	sprite5 = new Picture();
 	sprite5->setTexture("images/sprite.png");
@@ -75,6 +81,8 @@ void HelloWorld::addPicture()
 	sprite5->setTextureRect(Rect(170, 170, 170, 170));
 	sprite5->setScale(0.5f);
 	this->addChild(sprite5);
+	DataSingleTon::getInstance()->setPicutre(sprite5);
+
 
 	sprite6 = new Picture();
 	sprite6->setTexture("images/sprite.png");
@@ -83,6 +91,7 @@ void HelloWorld::addPicture()
 	sprite6->setTextureRect(Rect(340, 170, 170, 170));
 	sprite6->setScale(0.5f);
 	this->addChild(sprite6);
+	DataSingleTon::getInstance()->setPicutre(sprite6);
 
 	sprite7 = new Picture();
 	sprite7->setTexture("images/sprite.png");
@@ -91,6 +100,7 @@ void HelloWorld::addPicture()
 	sprite7->setTextureRect(Rect(0, 340, 170, 170));
 	sprite7->setScale(0.5f);
 	this->addChild(sprite7);
+	DataSingleTon::getInstance()->setPicutre(sprite7);
 
 	sprite8 = new Picture();
 	sprite8->setTexture("images/sprite.png");
@@ -99,6 +109,7 @@ void HelloWorld::addPicture()
 	sprite8->setTextureRect(Rect(170, 340, 170, 170));
 	sprite8->setScale(0.5f);
 	this->addChild(sprite8);
+	DataSingleTon::getInstance()->setPicutre(sprite8);
 
 	sprite9 = new Picture();
 	sprite9->setTexture("images/sprite.png");
@@ -107,5 +118,6 @@ void HelloWorld::addPicture()
 	sprite9->setTextureRect(Rect(340, 340, 170, 170));
 	sprite9->setScale(0.5f);
 	this->addChild(sprite9);
+	DataSingleTon::getInstance()->setPicutre(sprite9);
 
 }

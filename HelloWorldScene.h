@@ -19,9 +19,6 @@
 #define DOWN cocos2d::Vec2(0,-170)
 #define LEFT cocos2d::Vec2(-170,0)
 #define RIGHT cocos2d::Vec2(170,0)
-//cocos2d::Vector <cocos2d::Sprite*> picture;
-
-
 
 
 class HelloWorld : public cocos2d::LayerColor

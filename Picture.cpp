@@ -80,5 +80,7 @@ void Picture::onExit()
 
 void Picture::transCheck(Vec2 position)
 {
-	log("x : %f y : %f", position.x, position.y);
+	Vector <Picture*> pictures = DataSingleTon::getInstance()->getPicutre();
+	log("%d", pictures.size());
+//	log("x : %f y : %f", position.x, position.y);
 }

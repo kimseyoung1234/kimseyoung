@@ -1,4 +1,6 @@
 #include "Singleton.h"
+#include "cocos2d.h"
+USING_NS_CC;
 
 DataSingleTon * DataSingleTon::m_pInstance = nullptr;
 
@@ -21,3 +23,12 @@ DataSingleTon * DataSingleTon::getInstance()
 }
 
 
+void DataSingleTon::setPicutre(Picture *p)
+{
+	picture.pushBack(p);
+}
+
+cocos2d::Vector<Picture*> DataSingleTon::getPicutre()
+{
+	return picture;
+}
