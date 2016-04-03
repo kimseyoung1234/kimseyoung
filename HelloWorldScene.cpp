@@ -35,11 +35,17 @@ bool HelloWorld::init()
 
 void HelloWorld::addPicture()
 {
-	
+	auto background = Sprite::create("images/background.png");
+	background->setColor(Color3B::WHITE);
+	background->setTextureRect(Rect(0, 0, 170, 170));
+	background->setScale(0.5f);
+	background->setPosition(Vec2(EMPTY));
+	this->addChild(background);
+
 	sprite1 = new Picture();
 	sprite1->setTexture("images/sprite.png");
 	sprite1->setPosition(PICTURE_1);
-	sprite1->setPriority(10);
+	sprite1->setPriority(11);
 	sprite1->setTextureRect(Rect(0, 0, 170, 170));
 	sprite1->setScale(0.5f);
 	this->addChild(sprite1);

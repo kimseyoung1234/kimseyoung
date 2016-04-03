@@ -14,6 +14,7 @@
 #define PICTURE_7	cocos2d::Vec2(154, 74)
 #define PICTURE_8	cocos2d::Vec2(240, 74)
 #define PICTURE_9	cocos2d::Vec2(326, 74)
+#define EMPTY		cocos2d::Vec2(413, 74)
 
 #define UP cocos2d::Vec2(0,170)
 #define DOWN cocos2d::Vec2(0,-170)

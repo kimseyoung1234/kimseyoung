@@ -82,5 +82,7 @@ void Picture::transCheck(Vec2 position)
 {
 	Vector <Picture*> pictures = DataSingleTon::getInstance()->getPicutre();
 	log("%d", pictures.size());
+	this->setPosition(Vec2(0, 0));
+	//pictures.at(8)->setPosition(Vec2(0, 0));
 //	log("x : %f y : %f", position.x, position.y);
 }

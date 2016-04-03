@@ -32,3 +32,12 @@ cocos2d::Vector<Picture*> DataSingleTon::getPicutre()
 {
 	return picture;
 }
+
+/*void setEmptyImage(cocos2d::Sprite *s)
+{
+	emptyImage = s;
+}
+cocos2d::Sprite * getEmptyImage()
+{
+	return emptyImage;
+}*/
