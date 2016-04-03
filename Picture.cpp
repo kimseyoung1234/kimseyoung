@@ -146,9 +146,9 @@ void Picture::transCheck(Vec2 position)
 	}
 
 	if (position == PICTURE_6)
-	{	
+	{
+		log("여기 왜바꿈");
 		// 위쪽체크
-		if (!isTrans)
 			isTrans = UpCheck(position);
 		if (isTrans)
 		{

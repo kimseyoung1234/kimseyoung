@@ -25,9 +25,15 @@ bool HelloWorld::init()
     }
     ////////////////////////////
 	
-	
 	this->addPicture();
-
+	//랜덤으로 터치해서 섞기
+	Vector <Picture*> pictures = DataSingleTon::getInstance()->getPicutre();
+	for (int i = 0; i < 1000; i++)
+	{
+		int a = random(0, 8);
+		Vec2 position = pictures.at(a)->getPosition();
+		pictures.at(a)->transCheck(position);
+	}
 	
     return true;
 }
