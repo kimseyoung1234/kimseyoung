@@ -1,5 +1,7 @@
 #include "Picture.h"
 #include "HelloWorldScene.h"
+#include "Singleton.h"
+
 USING_NS_CC;
 
 Picture::Picture()

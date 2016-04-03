@@ -1,4 +1,5 @@
 ﻿#include "HelloWorldScene.h"
+#include "Singleton.h"
 
 USING_NS_CC;
 
@@ -34,6 +35,7 @@ bool HelloWorld::init()
 
 void HelloWorld::addPicture()
 {
+	
 	sprite1 = new Picture();
 	sprite1->setTexture("images/sprite.png");
 	sprite1->setPosition(PICTURE_1);
